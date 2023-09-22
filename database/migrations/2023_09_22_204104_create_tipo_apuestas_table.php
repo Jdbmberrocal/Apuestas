@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('tipo_apuestas', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre',100);
+            $table->string('descripcion');
             $table->timestamps();
         });
     }
