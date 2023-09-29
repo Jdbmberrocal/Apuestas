@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('tarjetas', function (Blueprint $table) {
             $table->id();
             $table->integer('minuto');
-            $table->enum('minuto',['Amarilla','Roja']);
+            $table->enum('tipo',['Amarilla','Roja']);
 
             $table->unsignedBigInteger('jugador_id');
             $table->foreign('jugador_id')->references('id')->on('jugadores');

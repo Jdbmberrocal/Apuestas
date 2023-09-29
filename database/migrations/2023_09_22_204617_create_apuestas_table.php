@@ -16,7 +16,7 @@ return new class extends Migration
             $table->float('monto',12,2);
             $table->string('prediccion');
             $table->float('cuota',5,2);
-            $table->emun('estado',['Pendiente','Ganada','Perdida','Anulada']);
+            $table->enum('estado',['Pendiente','Ganada','Perdida','Anulada']);
             $table->dateTime('fecha');
 
 
